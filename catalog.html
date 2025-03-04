@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Game Store - Каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">M-Game Store</a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="coop.html">Топ кооп игр</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main catalog">
+        <p class="info-text">Каталог игр</p>
+        <div class="catalog-row">
+            <div class="row-item">
+                <img src="images/game1.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+            <div class="row-item">
+                <img src="images/game2.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+        </div>
+        <div class="catalog-row">
+            <div class="row-item">
+                <img src="images/game3.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+            <div class="row-item">
+                <img src="images/game4.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+        </div>
+        <div class="catalog-row">
+            <div class="row-item">
+                <img src="images/game5.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+            <div class="row-item">
+                <img src="images/game6.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+        </div>
+        <div class="catalog-row">
+            <div class="row-item">
+                <img src="images/game7.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+            <div class="row-item">
+                <img src="images/game8.jpg" class="row-image">
+                <button onclick=buyProduct() class="buy-btn">Приобрести</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>2025 г</p>
+        <p>(C) M-Game Store</p>
+    </footer>
+
+    <script>
+        function buyProduct() {
+            alert("Упс! Игра закончилась, выберите другую!")
+        }
+    </script>
+</body>
+</html>

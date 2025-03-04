@@ -1,0 +1,215 @@
+:root {
+    font-size: 62.5%; 
+    --primary: #2C3930;
+    --bg: #3F4F44;
+    --secondary: #A27B5C;
+    --text: #FFFFFF;
+    --text2:#000000;
+    --link: #DCD7C9;
+    --hover-link: #b6b2a9;
+    --button: #1f3024;
+    --button-hover: #283a2c;
+    --radius: 0.5rem;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+* {
+    font-family: "Inter";
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--link);
+    height: 2.5rem;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--link);
+    text-decoration: none;
+}
+
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--hover-link);
+}
+
+.main {
+    width: 1280px;
+    height: 85rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text {
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.main-row {
+    height: 47.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-row {
+    margin-top: 2.5%;
+}
+
+.row-item {
+    width: 23.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-item a {
+    text-align: center;
+}
+
+.row-item img {
+    width: 300.8px;
+    height: 80%;
+}
+
+.buy-btn {
+    height: 45px;
+    margin-bottom: 15px;
+    width: 80%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--button);
+    color: var(--link);
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+.buy-btn:hover {
+    transition-duration: 0.8s;
+    transform: scale(1.08);
+    background-color: var(--button-hover);
+    color: #fff;
+}
+
+.catalog {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.catalog-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+}
+
+.catalog-row .row-item {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-row .row-item img {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.catalog-row .row-item a {
+    text-align: center;
+}
+
+.catalog-row .buy-btn {
+    width: 100%;
+    margin-top: 10px;
+}   
+
+.coop {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.coop-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+}
+
+.coop-row .row-item {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coop-row .row-item img {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.coop-row .row-item a {
+    text-align: center;
+}
+
+.coop-row .buy-btn {
+    width: 100%;
+    margin-top: 10px;
+}   
+
+/* Стили для футера */
+.footer {
+    background-color: var(--primary);
+    color: var(--link);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
