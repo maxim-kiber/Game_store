@@ -1,14 +1,12 @@
 :root {
     font-size: 62.5%; 
-    --primary: #2C3930;
-    --bg: #3F4F44;
-    --secondary: #A27B5C;
-    --text: #FFFFFF;
-    --text2:#000000;
-    --link: #DCD7C9;
-    --hover-link: #b6b2a9;
-    --button: #1f3024;
-    --button-hover: #283a2c;
+    --primary: #17153B;
+    --bg: #2E236C;
+    --text: #C8ACD6;
+    --link: #C8ACD6;
+    --hover-link: #720455;
+    --button: #433D8B;
+    --button-hover: #3C0753;
     --radius: 0.5rem;
     --shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -73,7 +71,7 @@ body {
 .info-text {
     font-size: 40px;
     font-weight: 200;
-    color: #fff;
+    color: var(--text);
     text-align: center;
     margin-top: -20px;
 }
@@ -127,7 +125,7 @@ body {
     transition-duration: 0.8s;
     transform: scale(1.08);
     background-color: var(--button-hover);
-    color: #fff;
+    color: var(--text);
 }
 
 .catalog {
@@ -200,7 +198,6 @@ body {
     margin-top: 10px;
 }   
 
-/* Стили для футера */
 .footer {
     background-color: var(--primary);
     color: var(--link);
