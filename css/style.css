@@ -210,3 +210,114 @@ body {
 .footer p {
     margin: 5px 0;
 }
+
+.hero {
+    background: linear-gradient(45deg, var(--primary), var(--bg));
+    padding: 4rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+    color: var(--text);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.new-releases, .platforms, .promotions, .advantages {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    color: var(--text);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.games-list, .platforms-list, .promo-list, .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.games-list li, .platforms-list li {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(200, 172, 214, 0.1);
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.promo-list li {
+    background: var(--primary);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+}
+.advantages-list li {
+    flex: 1 1 calc(50% - 1rem);
+    box-sizing: border-box;
+    background: var(--primary);
+    padding: 2rem;
+    border-radius: var(--radius);
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.cta {
+    text-align: center;
+    padding: 4rem 0;
+    background: var(--primary);
+    border-radius: var(--radius);
+    margin: 3rem 0;
+}
+
+.cta h2 {
+    margin-bottom: 2rem;
+}
+
+.cta ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: var(--button);
+    color: var(--link);
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+    margin: 1rem;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--hover-link);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}

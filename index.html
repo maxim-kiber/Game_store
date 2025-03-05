@@ -23,34 +23,79 @@
         </nav>
     </header>
 
-    <div class="main">
-        <p class="info-text">Топ новинок</p>
-        <div class="first-row main-row">
-            <div class="row-item">
-                <img src="images/new1.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
+    <main class="container">
+        <section class="hero">
+            <p>Здесь каждая кнопка — начало приключения, а каждая игра — новая история. Погрузитесь в миры, где вы станете героем, стратегом, исследователем или даже творцом!</p>
+        </section>
+
+        <section class="new-releases">
+            <h2>🔥 Горячие новинки</h2>
+            <ul class="games-list">
+                <li><strong>«Starfall Odyssey»</strong> — космическая RPG с открытым миром</li>
+                <li><strong>«Cyber Samurai»</strong> — экшен в стиле нео-Токио</li>
+                <li><strong>«Elden Realms 2»</strong> — продолжение легендарного фэнтези-хита</li>
+            </ul>
+            <p class="note">Предзаказ уже открыт! Получите эксклюзивные бонусы при ранней покупке.</p>
+        </section>
+
+        <section class="platforms">
+            <h2>🎮 Игры для всех платформ</h2>
+            <ul class="platforms-list">
+                <li><strong>PC</strong> (Steam, Epic, Origin)</li>
+                <li><strong>PlayStation 5/4</strong></li>
+                <li><strong>Xbox Series X/S</strong></li>
+                <li><strong>Nintendo Switch</strong></li>
+                <li><strong>Цифровые ключи</strong> — активируйте мгновенно!</li>
+            </ul>
+        </section>
+
+        <section class="promotions">
+            <h2>💥 Акции недели</h2>
+            <ul class="promo-list">
+                <li>Скидки до 70% на игры прошлых лет: <em>«The Witcher 3»</em>, <em>«Red Dead Redemption 2»</em>, <em>«Horizon Zero Dawn»</em></li>
+                <li>Купи 2 игры — получи третью в подарок (из выбранного списка)</li>
+                <li>Бесплатная доставка физических копий при заказе от 3990₽</li>
+            </ul>
+        </section>
+
+        <section class="advantages">
+            <h2>🌟 Почему M-Game Store?</h2>
+            <ul class="advantages-list">
+                <li>Гарантия подлинности — только лицензионные ключи и диски</li>
+                <li>Мгновенная доставка — ключи на email за 1 минуту</li>
+                <li>Поддержка 24/7 — поможем с активацией, возвратом и выбором</li>
+                <li>Бонусная программа — копите баллы и обменивайте на скидки</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <h2>🎁 Специально для новых игроков</h2>
+            <p>Зарегистрируйтесь и получите:</p>
+            <ul>
+                <li>-10% на первый заказ</li>
+                <li>Бесплатный доступ к инди-игре месяца (<em>«Pixel Quest»</em>)</li>
+            </ul>
+            <button onclick=unavailable() class="button">Зарегистрироваться</a>
+        </section>
+
+        <section class="action-buttons">
+            <div class="button-group">
+                <a href="catalog.html" class="button">Перейти в каталог</a>
+                <button onclick=unavailable() class="button">Поддержка</a>
+                <button onclick=unavailable() class="button">Акции</a>
             </div>
-            <div class="row-item">
-                <img src="images/new2.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
-            </div>
-        </div>
-        <div class="second-row main-row">
-            <div class="row-item">
-                <img src="images/new3.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
-            </div>
-            <div class="row-item">
-                <img src="images/new4.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
-            </div>
-        </div>
-    </div>
+        </section>
 
     <footer class="footer">
         <p>2025 г</p>
         <p>(C) M-Game Store</p>
     </footer>
+
+    <script>
+        function unavailable() {
+            alert("Временно недоступно")
+        }
+    </script>
 
 </body>
 </html>
