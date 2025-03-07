@@ -1,57 +1,63 @@
 :root {
-    font-size: 62.5%; 
-    --primary: #17153B;
-    --bg: #2E236C;
-    --text: #C8ACD6;
-    --link: #C8ACD6;
-    --hover-link: #720455;
-    --button: #433D8B;
-    --button-hover: #3C0753;
-    --radius: 0.5rem;
-    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 62.5%;
+    --primary: #2A2356;
+    --bg: #F5F3FF;
+    --text: #2A2356;
+    --link: #4F46E5;
+    --hover-link: #3730A3;
+    --button: #4F46E5;
+    --button-hover: #3730A3;
+    --radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 * {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--bg);
+    color: var(--text);
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1.5rem 2rem;
     background-color: var(--primary);
-    color: var(--link);
-    height: 2.5rem;
+    color: white;
+    box-shadow: var(--shadow);
 }
 
 .logo a {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
-    color: var(--link);
+    color: white;
     text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
+.logo a:hover {
+    opacity: 0.8;
+}
 
 .navbar .nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-}
-
-.navbar .nav-links li {
-    margin-left: 20px;
+    gap: 2rem;
 }
 
 .navbar .nav-links a {
-    color: var(--link);
+    color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
@@ -59,171 +65,94 @@ body {
 }
 
 .main {
-    width: 1280px;
-    height: 85rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
 }
 
 .info-text {
-    font-size: 40px;
-    font-weight: 200;
-    color: var(--text);
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--primary);
     text-align: center;
-    margin-top: -20px;
+    margin-bottom: 4rem;
 }
 
-.main-row {
-    height: 47.5%;
-    width: 100%;
+.catalog-row,
+.coop-row {
     display: flex;
-    justify-content: space-between;
-}
-
-.second-row {
-    margin-top: 2.5%;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .row-item {
-    width: 23.5%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
 }
 
-.row-item a {
-    text-align: center;
+.row-item:hover {
+    transform: translateY(-5px);
 }
 
 .row-item img {
-    width: 300.8px;
-    height: 80%;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.row-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .buy-btn {
-    height: 45px;
-    margin-bottom: 15px;
-    width: 80%;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 12px;
-    font-size: 20px;
-    border: none;
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
     background-color: var(--button);
-    color: var(--link);
-    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    font-size: 1.6rem;
+    font-weight: 600;
     cursor: pointer;
-    transition-duration: 0.8s;
+    transition: background-color 0.3s ease;
 }
 
 .buy-btn:hover {
-    transition-duration: 0.8s;
-    transform: scale(1.08);
     background-color: var(--button-hover);
-    color: var(--text);
 }
-
-.catalog {
-    height: auto;
-    padding-bottom: 40px;
-}
-
-.catalog-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.5%;
-}
-
-.catalog-row .row-item {
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.catalog-row .row-item img {
-    width: 100%;
-    height: 500px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-}
-
-.catalog-row .row-item a {
-    text-align: center;
-}
-
-.catalog-row .buy-btn {
-    width: 100%;
-    margin-top: 10px;
-}   
-
-.coop {
-    height: auto;
-    padding-bottom: 40px;
-}
-
-.coop-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.5%;
-}
-
-.coop-row .row-item {
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.coop-row .row-item img {
-    width: 100%;
-    height: 500px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-}
-
-.coop-row .row-item a {
-    text-align: center;
-}
-
-.coop-row .buy-btn {
-    width: 100%;
-    margin-top: 10px;
-}   
 
 .footer {
     background-color: var(--primary);
-    color: var(--link);
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
-    margin-top: 100px;
+    padding: 2rem;
+    margin-top: 4rem;
 }
 
 .footer p {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .hero {
-    background: linear-gradient(45deg, var(--primary), var(--bg));
+    background: linear-gradient(45deg, var(--primary), var(--button));
     padding: 4rem;
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 3rem;
-    color: var(--text);
+    color: white;
     text-align: center;
-    font-size: 1.8rem;
+    margin-bottom: 3rem;
 }
 
-.new-releases, .platforms, .promotions, .advantages {
-    background-color: rgba(255, 255, 255, 0.05);
+.new-releases,
+.platforms,
+.promotions,
+.advantages {
+    background: white;
     padding: 2.5rem;
     border-radius: var(--radius);
     margin-bottom: 3rem;
@@ -231,75 +160,72 @@ body {
 }
 
 h2 {
-    color: var(--text);
+    color: var(--primary);
     font-size: 2.4rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.games-list, .platforms-list, .promo-list, .advantages-list {
+.games-list,
+.platforms-list,
+.promo-list,
+.advantages-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.games-list li, .platforms-list li {
-    padding: 1.2rem 0;
-    border-bottom: 1px solid rgba(200, 172, 214, 0.1);
-    font-size: 1.6rem;
-    color: var(--text);
+.games-list li,
+.platforms-list li {
+    padding: 1.5rem;
+    background: var(--bg);
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.games-list li:hover,
+.platforms-list li:hover {
+    transform: translateX(5px);
 }
 
 .promo-list li {
     background: var(--primary);
+    color: white;
     margin: 1rem 0;
     padding: 1.5rem;
     border-radius: var(--radius);
-    font-size: 1.6rem;
-    color: var(--text);
 }
 
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; 
+    gap: 2rem;
 }
+
 .advantages-list li {
     flex: 1 1 calc(50% - 1rem);
-    box-sizing: border-box;
     background: var(--primary);
+    color: white;
     padding: 2rem;
     border-radius: var(--radius);
-    font-size: 1.6rem;
-    color: var(--text);
 }
 
 .cta {
     text-align: center;
-    padding: 4rem 0;
-    background: var(--primary);
+    padding: 4rem;
+    background: var(--bg);
     border-radius: var(--radius);
+    color: var(--primary);
     margin: 3rem 0;
-}
-
-.cta h2 {
-    margin-bottom: 2rem;
-}
-
-.cta ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-    font-size: 1.6rem;
-    color: var(--text);
 }
 
 .button {
     display: inline-block;
     padding: 1.5rem 3rem;
     background-color: var(--button);
-    color: var(--link);
+    color: white;
     text-decoration: none;
     border-radius: var(--radius);
     transition: all 0.3s ease;
@@ -312,7 +238,6 @@ h2 {
     background-color: var(--button-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow);
-    border-color: var(--hover-link);
 }
 
 .button-group {

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Store - Топ кооперативных игр</title>
+    <title>M-Game Store - Топ кооперативных игр</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,22 +27,20 @@
         <p class="info-text">Топ кооперативных игр</p>
         <div class="coop-row">
             <div class="row-item">
-                <img src="images/coop1.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
+                <img src="images/coop1.jpg" alt="Кооперативная игра 1" class="row-image">
+                <button onclick="buyProduct()" class="buy-btn">Приобрести</button>
             </div>
             <div class="row-item">
-                <img src="images/coop2.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
-            </div>
-        </div>
-        <div class="coop-row">
-            <div class="row-item">
-                <img src="images/coop3.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
+                <img src="images/coop2.jpg" alt="Кооперативная игра 2" class="row-image">
+                <button onclick="buyProduct()" class="buy-btn">Приобрести</button>
             </div>
             <div class="row-item">
-                <img src="images/coop4.jpg" class="row-image">
-                <a href="catalog.html"><button class="buy-btn">Приобрести</button></a>
+                <img src="images/coop3.jpg" alt="Кооперативная игра 3" class="row-image">
+                <button onclick="buyProduct()" class="buy-btn">Приобрести</button>
+            </div>
+            <div class="row-item">
+                <img src="images/coop4.jpg" alt="Кооперативная игра 4" class="row-image">
+                <button onclick="buyProduct()" class="buy-btn">Приобрести</button>
             </div>
         </div>
     </div>
@@ -51,5 +49,11 @@
         <p>2025 г</p>
         <p>(C) M-Game Store</p>
     </footer>
+
+    <script>
+        function buyProduct() {
+            alert("Упс! Ключи для этой игры закончились!");
+        }
+    </script>
 </body>
 </html>
